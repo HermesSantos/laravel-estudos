@@ -9,10 +9,8 @@ class FormController extends Controller
 {
     public function enviar(Request $request){
 
-        $data = new data;
-        $data->Comprador = $request->Comprador;
-        $data->Endereco = $request->Endereco;
-        $data->save();
-        return redirect('/')->with('flash_message', 'Endereço adicionado');
+        $data = $request->all();
+        data::create($data);
+        return redirect('/')->with('flash_message', 'Endereço adicionado', 200);
     }
 }

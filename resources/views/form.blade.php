@@ -12,6 +12,7 @@
         <input type="text" name="Comprador" placeholder="Comprador"><br><br>
         <input type="text" name="Endereco" placeholder="Endereço"><br><br>
         <button type="submit">Enviar</button>
-    </form>
+    </form><br><br>
+    <a href="/list">Lista de Endereços Cadastrados</a>
 </body>
 </html>
